@@ -6,8 +6,8 @@ ThemeData appTheme() {
     // brightness: Brightness.dark,
     // accentColor: Colors.cyan[600],
     primaryColor: const Color(0xFF334756),
-    canvasColor: const Color(0XFFF0A500),
-    splashColor: const Color(0xFFFFFFFF),
+    splashColor: const Color(0XFFF0A500),
+    canvasColor: const Color(0xFFFFFFFF),
 
     // Default font family.
     fontFamily: 'Open Sans',

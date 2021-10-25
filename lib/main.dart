@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:workspaces/constants/strings/app_strings.dart';
 import 'package:workspaces/constants/theme/app_theme.dart';
-import 'package:workspaces/presentation/home/homepage.dart';
+import 'package:workspaces/presentation/onboarding/get_started.dart';
 import 'package:workspaces/routes/router_generator.dart';
 
 void main() async {
@@ -26,7 +26,7 @@ class _AppState extends State<MyApp> {
     return MaterialApp(
       title: appName,
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: const GetStarted(),
       theme: appTheme(),
       onGenerateRoute: RouterGenerator.generateRoute,
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:workspaces/presentation/home/homepage.dart';
+import 'package:workspaces/presentation/onboarding/get_started.dart';
 import 'package:workspaces/routes/routes.dart';
 
 class RouterGenerator {
@@ -12,14 +13,14 @@ class RouterGenerator {
         return MaterialPageRoute<HomePage>(
           builder: (_) => const HomePage(),
         );
-      default:
-        return _home();
-    }
-  }
 
-  static Route<dynamic> _home() {
-    return MaterialPageRoute<HomePage>(
-      builder: (_) => const HomePage(),
-    );
+      case Routes.getStarted:
+        return MaterialPageRoute(
+          builder: (_) => const GetStarted(),
+        );
+
+      default:
+        return MaterialPageRoute<HomePage>(builder: (_) => const HomePage());
+    }
   }
 }
